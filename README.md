@@ -1,2 +1,2 @@
-# Hanja-Destroyer
+# hanja-destroyer
 Hanja? No problem!
