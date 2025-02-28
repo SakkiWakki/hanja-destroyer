@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Hanja Destroyer",
+  "version": "1.0",
+  "description": "Hanja? No problem!",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "lib/jquery.min.js",
+        "lib/converter.js",
+        "lib/process.js",
+        "lib/observer.js",
+        "lib/ruby_edit.js",
+        "lib/hanja.js",
+        "content.js",
+        "popup.js"
+      ]
+    }
+  ],
+  "permissions": ["storage", "activeTab"]
+}

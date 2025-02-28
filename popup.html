@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hanja-Hangul Conversion Settings</title>
+  <style>
+    body {
+      width: 300px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .example {
+      font-size: 20px; 
+      color: #000000; 
+    }
+    .ruby {
+      font-size: 10px; 
+      color: #000000; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Hanja-Hangul Conversion Settings</h1>
+  <label>
+    Select Mode:
+    <select id="modeSelect">
+      <option value="3">Furigana</option>
+      <option value="1">Parentheses</option>
+      <option value="2">Replace</option>
+      <!-- <option value="5">Tooltip on Hover</option> -->
+      <option value="4">Disable</option>
+    </select>
+  </label>
+  <label>
+    Parentheses Notation Option - Merge Parentheses for Consecutive Hanja:
+    <input type="checkbox" id="mode1Option" />
+  </label>
+  <label>
+    Display Above Option - Font Size:
+    <input type="range" id="fontSizeSlider" min="5" max="40" step="1" />
+    <span id="fontSizeValue">10</span> px
+  </label>
+  <label>
+    Display Above Option - Font Color:
+    <input type="color" id="fontColorPicker" />
+  </label>
+  <div class="example"></div>
+  <div class="ruby"></div> 
+  <button id="saveButton">Save</button>
+  <button id="resetButton">Reset to Default</button> 
+  <button id="force">Force Annotate</button>
+  <script src="options.js"></script>
+</body>
+</html>
