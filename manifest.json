@@ -24,8 +24,7 @@
         "lib/observer.js",
         "lib/ruby_edit.js",
         "lib/hanja.js",
-        "content.js",
-        "popup.js"
+        "content.js"
       ]
     }
   ],
