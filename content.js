@@ -27,6 +27,5 @@ async function loadSettings() {
 
   traverseAndProcess(document.body, globalSettings.mode);
 
-
   startObserver(globalSettings.mode);
 })();
